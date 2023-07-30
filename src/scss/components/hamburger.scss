@@ -1,0 +1,52 @@
+@mixin navbar-toggler {
+  width: var(--hamburger-width);
+  height: var(--hamburger-height);
+  position: relative;
+	outline: none;
+	box-shadow: none;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+  &__line {
+    width: 100%;
+    height: var(--hamburger-line-height);
+    background-color: currentColor;
+    transition: all .2s ease-in-out;
+    border-radius: 4px;
+		display: block;
+  }
+
+  &[aria-expanded=true] {
+    .navbar-toggler__line {
+			
+			&:nth-child(1) {
+				transform: rotate(45deg) translateY(-45%) scaleX(1.36);
+				transition: all .2s ease;
+				transform-origin: left;
+			}
+
+			&:nth-child(2) {
+				transform: translateX(-10px) scale(0);
+				transition: all .2s ease-in-out;
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg) translateY(35%) translateX(0%) scaleX(1.36);
+				transition: all .2s ease-in-out;
+				transform-origin: left;
+			}
+    }
+  }
+}
+
+.navbar-toggler {
+  --hamburger-width: 45px;
+  --hamburger-height: 45px;
+  --hamburger-line-height: 2px;
+	padding: 10px;
+	border: 1px solid inherit;
+
+  @include navbar-toggler;
+}

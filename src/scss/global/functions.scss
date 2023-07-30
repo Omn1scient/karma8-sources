@@ -1,0 +1,28 @@
+@function toRGB($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  @return #{rgb($red, $green, $blue)};
+}
+
+@function toRGBA($color, $alpha: 1) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  @return #{rgba($red, $green, $blue, $alpha)};
+}
+
+@function toRGBA_onlyNumbers($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  @return #{$red, $green, $blue};
+}
+
+
+//$accent: #000;
+// Вызов toRGB($accent) - вернет rgb(0,0,0)
+// Вызов toRGBA($accent, 0.5) - вернет rgba(0,0,0,0.5)
+// Вызов toRGBA($accent, 1) - вернет rgb(0,0,0)
+// Вызов toRGBA_onlyNumbers($color) - вернет 0,0,0
+

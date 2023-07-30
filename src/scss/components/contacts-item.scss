@@ -1,0 +1,21 @@
+.item-with-icon {
+  display: inline-flex;
+
+  .item-with-icon__icon {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+
+    @media (min-width: 992px) {
+      justify-content: center;
+      position: static;
+    }
+
+    svg {
+      width: 1em;
+      height: 1em;
+    }
+  }
+}

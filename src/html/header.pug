@@ -1,0 +1,39 @@
+header.header
+	nav.header__navbar.navbar.navbar-expand-lg.navbar-light.bg-light.py-3
+		.container
+			a.header__logo.navbar-brand(href='#' title="Логотип компании")
+				include ../img/icons/logo.svg
+
+			button.header__toggler.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#mobileMenu' aria-controls='mobileMenu' aria-expanded='false' aria-label='Мобильное меню')
+				span.navbar-toggler__line
+				span.navbar-toggler__line
+				span.navbar-toggler__line
+
+			#mobileMenu.collapse.navbar-collapse.flex-wrap
+				ul.header__main-navigation.navbar-nav.mr-auto.mt-3.mt-lg-0.pt-3.pt-lg-0.ms-auto
+					li.nav-item.active
+						a.nav-link(href='#request')
+							span Оставить заявку
+					li.nav-item
+						a.nav-link(href='#about')
+							span О компании
+					li.nav-item
+						a.nav-link(href='#contacts')
+							span Контакты
+
+				ul.header__contacts.navbar-nav.ms-auto.mt-3.mt-lg-0.pt-3.pt-lg-0.flex-lg-column.flex-xxl-row
+					li.nav-item
+						a.nav-link.fw-bold.p-lg-0.item-with-icon(href='tel:')
+							i.header__contacts-icon.item-with-icon__icon
+								include ../img/icons/phone.svg
+							span 8 (800)-123-45-67
+					li.nav-item
+						a.nav-link.fw-bold.p-lg-0.item-with-icon(href='#')
+							i.header__contacts-icon.item-with-icon__icon
+								include ../img/icons/location.svg
+							span Москва, Варшавское шоссе, 24
+
+
+				a.btn.btn--dark.d-md-none.mt-2.d-lg-none(href="#callback" data-bs-toggle="modal" data-bs-target="#callback") Задать вопрос
+
+

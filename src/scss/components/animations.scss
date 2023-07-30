@@ -1,0 +1,82 @@
+$transition-fast: all .001s ease-in-out;
+$transition-slower: all .5s ease-in-out;
+
+[data-animation] {
+  transition: $transition-slower !important;
+  position: relative !important;
+}
+
+[data-animation*="smooth-appear"] {
+  opacity: 0;
+  transition: $transition-fast !important;
+
+  &[data-animation*="active"] {
+    opacity: 1;
+  }
+}
+
+[data-animation*="slide-up"] {
+  opacity: 0;
+  bottom: -100px;
+
+  &[data-animation*="active"] {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+[data-animation*="slide-down"] {
+  opacity: 0;
+  top: -100px;
+
+  &[data-animation*="active"] {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+[data-animation*="slide-right"] {
+  opacity: 0;
+  left: -100px;
+
+  &[data-animation*="active"] {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+[data-animation*="slide-left"] {
+  opacity: 0;
+  right: -100px;
+
+  &[data-animation*="active"] {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+
+[data-animation*="scale-up"] {
+  opacity: 0;
+  transform: scale(0.5);
+
+  &[data-animation*="active"]  {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes vibrate {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-3px);
+  }
+  15%, 45%, 65%, 85% {
+    transform: translateX(2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(3px);
+  }
+}

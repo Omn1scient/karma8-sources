@@ -1,0 +1,13 @@
+.section-plate {
+  background-color: $section-plate;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media (min-width: 992px) {
+    padding: 2.5rem;
+  }
+}

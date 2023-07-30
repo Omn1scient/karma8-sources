@@ -1,0 +1,33 @@
+// MAIN
+$body-bg: #f5f5f5;
+$text-main: #222;
+$text-title: #272C4C;
+
+// ACCENTS
+$accent: #ff7300;
+$accent-rgb: toRGB($accent);
+$accent-rgba: toRGBA($accent, 1);
+$accent-rgba-numbers: toRGBA_onlyNumbers($accent);
+
+
+// MAIN BUTTONS
+$btn-bg: $accent;
+$btn-bg-hover: lighten($btn-bg, 5%);
+
+$btn-bg-dark: #000;
+$btn-bg-dark-hover: lighten($btn-bg-dark, 15%);
+
+$btn-text: #fff;
+$btn-text-hover: #fff;
+
+// MISC
+$footer-bg: #0d1121;
+$footer-color: #fff;
+
+$accent-shadow: rgba($accent, 0.5);
+$transition: all .2s ease;
+$divider: #dbdbdb;
+$section-plate: #fff;
+
+// OTHER VARIABLES
+$transition: all .2s ease;

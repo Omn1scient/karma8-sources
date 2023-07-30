@@ -1,0 +1,26 @@
+.list-style-custom {
+  padding-left: 20px;
+  list-style: none;
+
+  li {
+    position: relative;
+    line-height: 1.2;
+    font-size: calc(1rem - 0px);
+
+    &:not(:last-child) {
+      margin-bottom: 0.25rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0.3em;
+      left: -1.2em;
+      width: 0.5em;
+      height: 0.5em;
+      background-color: $accent;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+  }
+}

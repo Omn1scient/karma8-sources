@@ -1,0 +1,39 @@
+.contact-card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 1200px) {
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 2rem;
+  }
+}
+
+.contact-card__title {
+  margin-bottom: 15px;
+}
+
+.contact-card__contacts {
+  margin-bottom: 20px;
+
+  a {
+    color: $text-main;
+    text-decoration: none;
+    pointer-events: auto;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.contact-card__item {
+
+}

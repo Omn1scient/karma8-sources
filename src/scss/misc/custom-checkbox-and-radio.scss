@@ -1,0 +1,70 @@
+$checkbox-bg: #CBD4EC;
+$checkbox-bg-hover: #CBD4EC;
+
+$checkbox-bg-checked: #CBD4EC;
+
+$checkbox-icon-color: transparent;
+$checkbox-icon-color-hover: #606cb5;
+$checkbox-icon-color-checked: #273170;
+
+.custom-checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 2.85rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.428575rem;
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: 992px) {
+    font-size: 0.85714rem;
+    line-height: 1rem;
+    padding-left: 1.65rem;
+  }
+
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.429rem;
+    width: 1.429rem;
+    background-color: $checkbox-bg;
+    border-radius: 2px;
+
+    @media (min-width: 992px) {
+      height: 0.9288rem;
+      width: 0.9288rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/icons/check.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    font-size: 0;
+
+    &:checked ~ .checkmark {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

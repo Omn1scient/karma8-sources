@@ -1,0 +1,38 @@
+.contacts__contact-card {
+
+}
+
+.contacts {
+  .row[role=tablist] {
+    [class^=col] {
+      margin-bottom: 10px;
+      pointer-events: none;
+    }
+  }
+}
+
+.contacts__panes {
+  p {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.contacts__map {
+  overflow: hidden;
+  border-radius: 10px;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.contact-card__additional {
+  .btn {
+    pointer-events: auto;
+    width: 100%;
+  }
+}

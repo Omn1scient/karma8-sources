@@ -1,0 +1,26 @@
+@import "vendor/bootstrap";
+@import "node_modules/swiper/swiper-bundle.min";
+
+
+
+@import "fonts";
+@import "colors/colors";
+@import "global/functions";
+@import "global/global";
+@import "misc/misc";
+
+html,
+body {
+	min-width: 320px;
+	width: 100%;
+	font-family: 'Nunito', 'Arial', sans-serif;
+	background-color: $body-bg;
+	color: $text-main;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+@import "components/components";
+@import "blocks/blocks";
+
