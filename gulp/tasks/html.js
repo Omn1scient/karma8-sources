@@ -1,7 +1,7 @@
 import fileInclude from "gulp-file-include";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
-import pug from "gulp-pug";
+//import pug from "gulp-pug";
 import prettify from "gulp-prettify";
 
 
@@ -14,8 +14,9 @@ export const html = () => {
 			}))
 		)
 
-		//.pipe(fileInclude())
+		.pipe(fileInclude())
 
+		/*
 		.pipe(pug({
 			//Cжатие HTML файла
 			//pretty: false,
@@ -23,6 +24,7 @@ export const html = () => {
 			verbose: true
 		}))
 
+		*/
 
 		.pipe(prettify({
 			indent_inner_html: true, // Отступ вложенного HTML кода
