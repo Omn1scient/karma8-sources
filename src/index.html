@@ -1,434 +1,500 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/png" href="img/favicon/favicon.png">
-		<link rel="stylesheet" href="css/style.min.css">
-		<title>title</title>
-	</head>
-<body>
-<main>
-
-<header class="header">
-	<nav class="header__navbar navbar navbar-expand-lg navbar-light bg-light py-3">
-		<div class="container">
-			<a class="header__logo navbar-brand" href="#" title="Логотип компании">
-				<svg viewBox="0 0 110 24" width="114" height="28" fill="#000" >
-					<path d="M40.1 23.9L35 14.8H31.8C33.7 14.6 35.3 13.9 36.6 12.8C38.3 11.4 39.2 9.6 39.2 7.5C39.2 5.4 38.3 3.6 36.6 2.2C34.9 0.7 32.7 0 30.2 0H19L12.4 17.2L5.6 0H0V23.9H1.4V2.6L9.8 23.9H11.4L19.4 2.7V23.9H24.6V14.9H29.3L34.3 23.9H40.1ZM24.6 13.7V1.2H28.5C31.3 1.2 33.2 3.7 33.2 7.5C33.2 11.3 31.3 13.8 28.5 13.8H24.6V13.7Z" fill="currentColor"/>
-					<path d="M69.5 18L67 13.4H65.4C66.3 13.3 67.1 12.9 67.8 12.4C68.7 11.7 69.1 10.8 69.1 9.7C69.1 8.6 68.7 7.8 67.8 7.1C66.9 6.4 65.9 6 64.6 6H59.2V18H61.8V13.5H64.2L66.7 18H69.5ZM61.8 12.9V6.6H63.7C65.1 6.6 66 7.8 66 9.7C66 11.6 65.1 12.8 63.7 12.8H61.8V12.9Z" fill="currentColor"/>
-					<path d="M77.3 18C75.5 18 74 17.4 72.8 16.3C71.6 15.1 71 13.7 71 12C71 10.3 71.6 8.8 72.8 7.7C74 6.5 75.5 6 77.3 6C79.1 6 80.6 6.6 81.8 7.7C83 8.9 83.6 10.3 83.6 12C83.6 13.7 83 15.2 81.8 16.3C80.6 17.5 79.1 18 77.3 18ZM77.3 17.6C78.4 17.6 79.2 17.1 79.9 16.1C80.6 15.1 80.9 13.7 80.9 12C80.9 10.3 80.6 9 79.9 7.9C79.3 6.9 78.4 6.4 77.3 6.4C76.2 6.4 75.4 6.9 74.7 7.9C74.1 8.9 73.7 10.3 73.7 12C73.7 13.7 74 15 74.7 16.1C75.3 17.1 76.2 17.6 77.3 17.6Z" fill="currentColor"/>
-					<path d="M94.8 6C94.8 6 94.8 14.3 94.8 15.8C94.2 16.7 93.2 17.2 91.9 17.2C89.7 17.2 88.3 15.8 88.3 13.4V6H85.7V13.1C85.7 14.5 86.2 15.7 87.2 16.6C88.2 17.5 89.5 17.9 91.1 17.9C92.6 17.9 93.7 17.5 94.6 16.7C94.8 16.5 95 16.3 95.1 16.1L97 18H97.4V6H94.8Z" fill="currentColor"/>
-					<path d="M105.4 6C106.7 6 107.7 6.4 108.6 7.1C109.5 7.8 109.9 8.7 109.9 9.7C109.9 10.8 109.5 11.6 108.6 12.4C107.7 13.1 106.7 13.5 105.4 13.5H102.6V18H100V6H105.4ZM104.6 12.9C106 12.9 106.9 11.7 106.9 9.8C106.9 7.9 106 6.7 104.6 6.7H102.7V12.9H104.6Z" fill="currentColor"/>
-					<path d="M54 12.8999C54 12.8999 54 14.5999 54 15.8999C53.7 16.9999 52.7 17.6999 51.3 17.6999C50.1 17.6999 49.3 17.1999 48.6 16.1999C47.9 15.1999 47.6 13.8999 47.6 12.1999C47.6 8.5999 49.3 6.4999 52.1 6.4999C53.1 6.4999 53.9 6.6999 54.5 7.1999C55.2 7.6999 55.5 8.2999 55.5 9.0999H56C56 8.1999 55.5 7.2999 54.7 6.6999C53.9 6.0999 52.8 5.8999 51.5 5.8999C49.6 5.8999 48.1 6.4999 46.8 7.5999C45.6 8.7999 45 10.2999 45 11.9999C45 13.6999 45.6 15.1999 46.8 16.3999C48 17.5999 49.6 18.0999 51.3 18.0999C52.9 18.0999 54.2 17.5999 54.8 16.6999L56.2 17.9999H56.6V12.8999H54Z" fill="currentColor"/>
-				</svg>
-			</a>
-			<button class="header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Мобильное меню"><span class="navbar-toggler__line"></span><span class="navbar-toggler__line"></span><span class="navbar-toggler__line"></span></button>
-			<div class="collapse navbar-collapse flex-wrap" id="mobileMenu">
-				<ul class="header__main-navigation navbar-nav mr-auto mt-3 mt-lg-0 pt-3 pt-lg-0 ms-auto">
-					<li class="nav-item active"><a class="nav-link" href="#request"><span>Оставить заявку</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="#about"><span>О компании</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="#contacts"><span>Контакты</span></a></li>
-				</ul>
-				<ul class="header__contacts navbar-nav ms-auto mt-3 mt-lg-0 pt-3 pt-lg-0 flex-lg-column flex-xxl-row">
-					<li class="nav-item">
-						<a class="nav-link fw-bold p-lg-0 item-with-icon" href="tel:#">
-							<i class="header__contacts-icon item-with-icon__icon">
-							<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-								<path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>title</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav class="header__navbar navbar navbar-expand-lg navbar-light bg-light py-3">
+          <div class="container">
+            <a class="header__logo navbar-brand" href="#" title="Логотип компании">
+              <svg viewBox="0 0 110 24" width="114" height="28" fill="#000">
+                <path d="M40.1 23.9L35 14.8H31.8C33.7 14.6 35.3 13.9 36.6 12.8C38.3 11.4 39.2 9.6 39.2 7.5C39.2 5.4 38.3 3.6 36.6 2.2C34.9 0.7 32.7 0 30.2 0H19L12.4 17.2L5.6 0H0V23.9H1.4V2.6L9.8 23.9H11.4L19.4 2.7V23.9H24.6V14.9H29.3L34.3 23.9H40.1ZM24.6 13.7V1.2H28.5C31.3 1.2 33.2 3.7 33.2 7.5C33.2 11.3 31.3 13.8 28.5 13.8H24.6V13.7Z" fill="currentColor" />
+                <path d="M69.5 18L67 13.4H65.4C66.3 13.3 67.1 12.9 67.8 12.4C68.7 11.7 69.1 10.8 69.1 9.7C69.1 8.6 68.7 7.8 67.8 7.1C66.9 6.4 65.9 6 64.6 6H59.2V18H61.8V13.5H64.2L66.7 18H69.5ZM61.8 12.9V6.6H63.7C65.1 6.6 66 7.8 66 9.7C66 11.6 65.1 12.8 63.7 12.8H61.8V12.9Z" fill="currentColor" />
+                <path d="M77.3 18C75.5 18 74 17.4 72.8 16.3C71.6 15.1 71 13.7 71 12C71 10.3 71.6 8.8 72.8 7.7C74 6.5 75.5 6 77.3 6C79.1 6 80.6 6.6 81.8 7.7C83 8.9 83.6 10.3 83.6 12C83.6 13.7 83 15.2 81.8 16.3C80.6 17.5 79.1 18 77.3 18ZM77.3 17.6C78.4 17.6 79.2 17.1 79.9 16.1C80.6 15.1 80.9 13.7 80.9 12C80.9 10.3 80.6 9 79.9 7.9C79.3 6.9 78.4 6.4 77.3 6.4C76.2 6.4 75.4 6.9 74.7 7.9C74.1 8.9 73.7 10.3 73.7 12C73.7 13.7 74 15 74.7 16.1C75.3 17.1 76.2 17.6 77.3 17.6Z" fill="currentColor" />
+                <path d="M94.8 6C94.8 6 94.8 14.3 94.8 15.8C94.2 16.7 93.2 17.2 91.9 17.2C89.7 17.2 88.3 15.8 88.3 13.4V6H85.7V13.1C85.7 14.5 86.2 15.7 87.2 16.6C88.2 17.5 89.5 17.9 91.1 17.9C92.6 17.9 93.7 17.5 94.6 16.7C94.8 16.5 95 16.3 95.1 16.1L97 18H97.4V6H94.8Z" fill="currentColor" />
+                <path d="M105.4 6C106.7 6 107.7 6.4 108.6 7.1C109.5 7.8 109.9 8.7 109.9 9.7C109.9 10.8 109.5 11.6 108.6 12.4C107.7 13.1 106.7 13.5 105.4 13.5H102.6V18H100V6H105.4ZM104.6 12.9C106 12.9 106.9 11.7 106.9 9.8C106.9 7.9 106 6.7 104.6 6.7H102.7V12.9H104.6Z" fill="currentColor" />
+                <path d="M54 12.8999C54 12.8999 54 14.5999 54 15.8999C53.7 16.9999 52.7 17.6999 51.3 17.6999C50.1 17.6999 49.3 17.1999 48.6 16.1999C47.9 15.1999 47.6 13.8999 47.6 12.1999C47.6 8.5999 49.3 6.4999 52.1 6.4999C53.1 6.4999 53.9 6.6999 54.5 7.1999C55.2 7.6999 55.5 8.2999 55.5 9.0999H56C56 8.1999 55.5 7.2999 54.7 6.6999C53.9 6.0999 52.8 5.8999 51.5 5.8999C49.6 5.8999 48.1 6.4999 46.8 7.5999C45.6 8.7999 45 10.2999 45 11.9999C45 13.6999 45.6 15.1999 46.8 16.3999C48 17.5999 49.6 18.0999 51.3 18.0999C52.9 18.0999 54.2 17.5999 54.8 16.6999L56.2 17.9999H56.6V12.8999H54Z" fill="currentColor" />
+              </svg>
+            </a>
+            <button class="header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Мобильное меню">
+              <span class="navbar-toggler__line"></span>
+              <span class="navbar-toggler__line"></span>
+              <span class="navbar-toggler__line"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-wrap" id="mobileMenu">
+              <ul class="header__main-navigation navbar-nav mr-auto mt-3 mt-lg-0 pt-3 pt-lg-0 ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#request">
+                    <span>Оставить заявку</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">
+                    <span>О компании</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacts">
+                    <span>Контакты</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header__contacts navbar-nav ms-auto mt-3 mt-lg-0 pt-3 pt-lg-0 flex-lg-column flex-xxl-row">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold p-lg-0 item-with-icon" href="tel:#">
+                    <i class="header__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
 									s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
 									c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
 									c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
 									l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
 									L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
 									C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
-									c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor"/>
-							</svg>
-							</i>
-							<span>8 (800)-123-45-67</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fw-bold p-lg-0 item-with-icon" href="#">
-							<i class="header__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path  d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+									c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>8 (800)-123-45-67</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold p-lg-0 item-with-icon" href="#">
+                    <i class="header__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
 										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
 										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
 										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
 										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
-								</svg>
-							</i>
-							<span>Москва, Варшавское шоссе, 24</span>
-						</a>
-					</li>
-				</ul>
-				<a class="btn btn--dark d-md-none mt-2 d-lg-none" href="#callback" data-bs-toggle="modal" data-bs-target="#callback">Задать вопрос</a>
-			</div>
-		</div>
-	</nav>
-</header>
-
-<section class="first-screen">
-  <div class="first-screen__slider swiper mainSlider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/content/slide-1.jpg" alt="Слайд-1"></div>
-      <div class="swiper-slide"><img src="img/content/slide-2.jpg" alt="Слайд-2"></div>
-      <div class="swiper-slide"><img src="img/content/slide-3.jpg" alt="Слайд-3"></div>
-    </div>
-  </div>
-  <div class="first-screen__content">
-    <div class="container">
-      <div class="first-screen__wrap">
-        <h1 class="first-screen__title section-title" data-animation="slide-left slide-down">Строительная компания<span><br> MR Group</span> проектирует высоко экологичные и эффективные дома</h1>
-        <div class="first-screen__additional">
-          <p class="first-screen__desc" data-animation="slide-right scale-up slide-up">от 5 млн ₽</p>
-        </div>
-        <div class="swiper-buttons">
-          <div class="swiper-button-prev" data-animation="scale-up slide-left"></div>
-          <div class="swiper-button-next" data-animation="scale-up slide-right"></div>
-        </div>
-        <ul class="first-screen__list" data-animation="slide-left slide-up scale-up">
-          <li>Профессиональные навыки</li>
-          <li>Соблюдение сроков заказчика</li>
-          <li>Гарантии от 10 лет</li>
-          <li>Соблюдение норм и стандартов</li>
-        </ul>
-        <div class="first-screen__buttons mt-auto"><a class="btn btn--accent" href="#request" data-animation="slide-up slide-right">Оставить заявку</a><a class="btn btn--dark d-none d-sm-inline-flex" href="#callback" data-bs-toggle="modal" data-bs-target="#callback" data-animation="slide-up slide-left">Задать вопрос</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="swiper-pagination"></div>
-</section>
-
-<section class="about pt-5" id="about">
-  <div class="container">
-    <h2 class="about__title section-title" data-animation="scale-up">Информация о компании</h2>
-    <div class="about__section-plate section-plate">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="about__information" data-animation="slide-right">
-            <h3 class="about__secondary-title secondary-title">Миссия MR Group</h3>
-            <p class="about__text">Строительная компания "MR Group" - это команда профессионалов, сплоченных общей целью создания качественных и надежных объектов для наших клиентов.</p>
-            <p class="about__text">На протяжении 8 лет наша компания успешно осуществляет разнообразные строительные проекты, от мелких ремонтных работ до крупномасштабных строительств коммерческих и жилых комплексов. Мы уделяем особое внимание качеству и срокам выполнения работ, чтобы каждый наш проект стал воплощением мечты наших заказчиков.</p>
-            <p class="about__text fw-bold">Чем мы занимаемся:</p>
-            <ul class="about__list list-style-custom">
-              <li>Строительство жилых домов и коттеджей</li>
-              <li>Коммерческое строительство</li>
-              <li>Ремонт и реконструкция</li>
-              <li>Архитектурное проектирование</li>
-              <li>Строительство коммерческих комплексов</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-4 mt-md-5 mt-lg-0">
-          <div class="about__image" data-animation="slide-down"><img src="img/content/about.jpg" data-animation="slide-right" alt="О компании"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contacts pt-5" id="contacts">
-  <div class="container">
-    <h2 class="contacts__title section-title" data-animation="scale-up">Наши контакты</h2>
-    <div class="row nav" role="tablist">
-      <div class="col-md-6 col-lg-4 active" data-bs-toggle="tab" data-bs-target="#tab-1" role="tab" aria-selected="true">
-        <div class="contacts__contact-card contact-card" data-animation="slide-down">
-          <h5 class="contact-card__title">Наш адрес в Москве</h5>
-          <div class="contact-card__contacts d-flex flex-column">
-						<a class="contact-card__item item-with-icon" href="tel:#">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
-										c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
-										c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
-										l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
-										L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
-										C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
-										c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor"/>
-								</svg>
-							</i>
-							<span>8 (800)-123-45-67</span>
-						</a>
-						<a class="contact-card__item item-with-icon" href="mailto:#">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path   d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M801.861,187.424c17.59,0.139,34.667,6.627,47.568,19.529l99.849,99.81
-										c27.6,27.601,25.709,74.104-4.143,104.027c-29.925,29.925-76.502,31.704-104.026,4.18l-99.811-99.81
-										c-27.601-27.525-25.671-74.177,4.18-104.027C761.337,195.234,781.928,187.267,801.861,187.424L801.861,187.424z M637.348,319.301
-										l199.658,199.62L512.538,843.312L312.88,643.655L637.348,319.301z M261.056,681.459l210.6,210.601l-263.335,52.735L261.056,681.459z
-										" fill="currentColor" />
-								</svg>
-							</i>
-							<span>mrgroup-msk@support.ru</span>
-						</a>
-						<a class="contact-card__item item-with-icon">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path  d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
-										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
-										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
-										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
-								</svg>
-							</i>
-							<span>Москва, Варшавское шоссе, 24</span>
-						</a>
-					</div>
-          <p class="contact-card__decription">Наша строительная компания в Москве предоставляет высококачественные услуги по строительству и ремонту, с учетом индивидуальных потребностей клиентов.</p>
-          <div class="contact-card__additional">
-            <button class="btn btn--accent" type="submit">Смотреть на карте</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4" data-bs-toggle="tab" data-bs-target="#tab-2" role="tab" aria-selected="false">
-        <div class="contacts__contact-card contact-card" data-animation="slide-up">
-          <h5 class="contact-card__title">Наш адрес в Санкт-Петербурге</h5>
-					<div class="contact-card__contacts d-flex flex-column">
-						<a class="contact-card__item item-with-icon" href="tel:#">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
-										c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
-										c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
-										l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
-										L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
-										C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
-										c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor"/>
-								</svg>
-							</i>
-							<span>8 (800)-555-77-77</span>
-						</a>
-						<a class="contact-card__item item-with-icon" href="mailto:#">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path   d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M801.861,187.424c17.59,0.139,34.667,6.627,47.568,19.529l99.849,99.81
-										c27.6,27.601,25.709,74.104-4.143,104.027c-29.925,29.925-76.502,31.704-104.026,4.18l-99.811-99.81
-										c-27.601-27.525-25.671-74.177,4.18-104.027C761.337,195.234,781.928,187.267,801.861,187.424L801.861,187.424z M637.348,319.301
-										l199.658,199.62L512.538,843.312L312.88,643.655L637.348,319.301z M261.056,681.459l210.6,210.601l-263.335,52.735L261.056,681.459z
-										" fill="currentColor" />
-								</svg>
-							</i>
-							<span>mrgroup-ptb@support.ru</span>
-						</a>
-						<a class="contact-card__item item-with-icon">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path  d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
-										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
-										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
-										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
-								</svg>
-							</i>
-							<span>Санкт-Петербург, Садовая улица, 31</span>
-						</a>
-					</div>
-					<p class="contact-card__decription">В Петербурге наша компания специализируется на создании современных и функциональных пространств, отвечающих самым высоким стандартам качества.</p>
-          <div class="contact-card__additional">
-            <button class="btn btn--accent" type="submit">Смотреть на карте</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4" data-bs-toggle="tab" data-bs-target="#tab-3" role="tab" aria-selected="false">
-        <div class="contacts__contact-card contact-card" data-animation="slide-down">
-          <h5 class="contact-card__title">Наш адрес в Волгограде</h5>
-					<div class="contact-card__contacts d-flex flex-column">
-						<a class="contact-card__item item-with-icon" href="tel:#">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
-										c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
-										c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
-										l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
-										L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
-										C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
-										c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor"/>
-								</svg>
-							</i>
-							<span>8 (800)-777-88-69</span>
-						</a>
-						<a class="contact-card__item item-with-icon" href="mailto:#">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path   d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M801.861,187.424c17.59,0.139,34.667,6.627,47.568,19.529l99.849,99.81
-										c27.6,27.601,25.709,74.104-4.143,104.027c-29.925,29.925-76.502,31.704-104.026,4.18l-99.811-99.81
-										c-27.601-27.525-25.671-74.177,4.18-104.027C761.337,195.234,781.928,187.267,801.861,187.424L801.861,187.424z M637.348,319.301
-										l199.658,199.62L512.538,843.312L312.88,643.655L637.348,319.301z M261.056,681.459l210.6,210.601l-263.335,52.735L261.056,681.459z
-										" fill="currentColor" />
-								</svg>
-							</i>
-							<span>mrgroup-vlgk@support.ru</span>
-						</a>
-						<a class="contact-card__item item-with-icon">
-							<i class="contacts__contacts-icon item-with-icon__icon">
-								<svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
-									<path  d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
-										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
-										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
-										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
-										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
-								</svg>
-							</i>
-							<span>Волгоград, улица Ткачёва, 16Б</span>
-						</a>
-					</div>
-					<p class="contact-card__decription">В Волгограде мы занимаемся строительством надежных и эстетичных зданий, подходящих для жизни и работы в динамично развивающемся городе.</p>
-          <div class="contact-card__additional">
-            <button class="btn btn--accent" type="submit">Смотреть на карте</button>
-          </div>
-        </div>
-      </div>
-		</div>
-    <div class="contacts__panes tab-content mt-3" data-animation="slide-up">
-      <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-        <div class="contacts__map">
-          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/varshavskoye_shosse_24a/Z04YcAViS0IGQFtvfXp5dHRrbQ==/?indoorLevel=1&amp;ll=37.622603%2C55.686355&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Варшавское шоссе, 24</a>
-            <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&amp;ll=37.622603%2C55.686355&amp;mode=whatshere&amp;whatshere%5Bpoint%5D=37.622271%2C55.685889&amp;whatshere%5Bzoom%5D=17&amp;z=17" width="560" height="400" style="position:relative;"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-        <div class="contacts__map">
-          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/sadovaya_ulitsa_31/Z0kYdQViSEIDQFtjfXVzeXRlYg==/?ll=30.322215%2C59.928947&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=18.71" style="color:#eee;font-size:12px;position:absolute;top:14px;">Садовая улица, 31</a>
-            <iframe src="https://yandex.ru/map-widget/v1/?ll=30.322215%2C59.928947&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMDA4NzI1MzAzEkrQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQodCw0LTQvtCy0LDRjyDRg9C70LjRhtCwLCAzMSIKDdGT8kEVKLdvQg%2C%2C&amp;z=18.71" width="560" height="400" style="position:relative;"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-        <div class="contacts__map">
-          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Волгоград</a><a href="https://yandex.ru/maps/38/volgograd/house/ulitsa_tkachyova_16b/YE0YcwZnTEQDQFpifXtzc3lmbQ==/?ll=44.517253%2C48.722982&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=16.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ткачёва, 16Б — Яндекс Карты</a>
-            <iframe src="https://yandex.ru/map-widget/v1/?ll=44.517253%2C48.722982&amp;mode=whatshere&amp;whatshere%5Bpoint%5D=44.517317%2C48.722520&amp;whatshere%5Bzoom%5D=17&amp;z=16.84" width="560" height="400" style="position:relative;"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="request pt-5" id="request">
-  <div class="container">
-    <h2 class="request__title section-title" data-animation="scale-up">Оставить заявку</h2>
-    <div class="request__section-plate section-plate">
-      <form class="request__form callback-form" action="/" method="post" id="requestForm" data-animation="slide-left">
-        <div class="row">
-          <div class="col-md-6 order-md-2">
-            <div class="px-2 px-sm-5 py-sm-4 py-md-0 px-md-3 ps-lg-4 ps-xxl-5">
-              <div class="mb-3 callback-form__element">
-                <label class="form-label" for="requestName">Ваше имя</label>
-                <input class="form-control" id="requestName" type="text" name="name"><span class="form-checker">Заполните поле корректно</span>
-              </div>
-              <div class="mb-3 callback-form__element">
-                <label class="form-label" for="requestEmail">Ваша электронная почта</label>
-                <input class="form-control" id="requestEmail" type="email" name="email"><span class="form-checker">Заполните поле корректно</span>
-                <p class="form-text" id="emailHelp">Мы никому не предоставляем ваши данные.</p>
-              </div>
-              <div class="mb-3 callback-form__element">
-                <label class="form-label" for="requestMessage">Сообщение</label>
-                <textarea class="form-control" id="requestMessage" placeholder="Дополнительная информация" name="message" style="height: 100px"></textarea>
-              </div>
-              <div class="mb-3 callback-form__element form-check">
-                <input class="form-check-input" id="requestCheck" type="checkbox" name="check">
-                <label class="form-check-label" for="requestCheck">Я согласен с политикой обработки <a href="#" class="text-muted"> "Персональных данных" </a></label>
-              </div>
-              <button class="btn btn--accent" type="submit" name="button">Отправить</button>
+                      </svg>
+                    </i>
+                    <span>Москва, Варшавское шоссе, 24</span>
+                  </a>
+                </li>
+              </ul>
+              <a class="btn btn--dark d-md-none mt-2 d-lg-none" href="#callback" data-bs-toggle="modal" data-bs-target="#callback">Задать вопрос</a>
             </div>
           </div>
-          <div class="col-md-6 d-none d-sm-block order-md-1">
-            <div class="request__image-wrap px-sm-5 pb-sm-4 p-md-0">
-              <div class="request__image" data-animation="slide-left"><img src="img/content/request.jpg" alt="Форма обратной связи"></div>
+        </nav>
+      </header>
+      <section class="first-screen">
+        <div class="first-screen__slider swiper mainSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/content/slide-1.jpg" alt="Слайд-1">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content/slide-2.jpg" alt="Слайд-2">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/content/slide-3.jpg" alt="Слайд-3">
             </div>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<div class="modal fade" id="callback" tabindex="-1" aria-labelledby="callback" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
-        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="first-screen__content">
+          <div class="container">
+            <div class="first-screen__wrap">
+              <h1 class="first-screen__title section-title" data-animation="slide-left slide-down">Строительная компания <span>
+                  <br> MR Group </span> проектирует высоко экологичные и эффективные дома </h1>
+              <div class="first-screen__additional">
+                <p class="first-screen__desc" data-animation="slide-right scale-up slide-up">от 5 млн ₽</p>
+              </div>
+              <div class="swiper-buttons">
+                <div class="swiper-button-prev" data-animation="scale-up slide-left"></div>
+                <div class="swiper-button-next" data-animation="scale-up slide-right"></div>
+              </div>
+              <ul class="first-screen__list" data-animation="slide-left slide-up scale-up">
+                <li>Профессиональные навыки</li>
+                <li>Соблюдение сроков заказчика</li>
+                <li>Гарантии от 10 лет</li>
+                <li>Соблюдение норм и стандартов</li>
+              </ul>
+              <div class="first-screen__buttons mt-auto">
+                <a class="btn btn--accent" href="#request" data-animation="slide-up slide-right">Оставить заявку</a>
+                <a class="btn btn--dark d-none d-sm-inline-flex" href="#callback" data-bs-toggle="modal" data-bs-target="#callback" data-animation="slide-up slide-left">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="about pt-5" id="about">
+        <div class="container">
+          <h2 class="about__title section-title" data-animation="scale-up">Информация о компании</h2>
+          <div class="about__section-plate section-plate">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="about__information" data-animation="slide-right">
+                  <h3 class="about__secondary-title secondary-title">Миссия MR Group</h3>
+                  <p class="about__text">Строительная компания "MR Group" - это команда профессионалов, сплоченных общей целью создания качественных и надежных объектов для наших клиентов.</p>
+                  <p class="about__text">На протяжении 8 лет наша компания успешно осуществляет разнообразные строительные проекты, от мелких ремонтных работ до крупномасштабных строительств коммерческих и жилых комплексов. Мы уделяем особое внимание качеству и срокам выполнения работ, чтобы каждый наш проект стал воплощением мечты наших заказчиков.</p>
+                  <p class="about__text fw-bold">Чем мы занимаемся:</p>
+                  <ul class="about__list list-style-custom">
+                    <li>Строительство жилых домов и коттеджей</li>
+                    <li>Коммерческое строительство</li>
+                    <li>Ремонт и реконструкция</li>
+                    <li>Архитектурное проектирование</li>
+                    <li>Строительство коммерческих комплексов</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-4 mt-md-5 mt-lg-0">
+                <div class="about__image" data-animation="slide-down">
+                  <img src="img/content/about.jpg" data-animation="slide-right" alt="О компании">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts pt-5" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title section-title" data-animation="scale-up">Наши контакты</h2>
+          <div class="row nav" role="tablist">
+            <div class="col-md-6 col-lg-4 active" data-bs-toggle="tab" data-bs-target="#tab-1" role="tab" aria-selected="true">
+              <div class="contacts__contact-card contact-card" data-animation="slide-down">
+                <h5 class="contact-card__title">Наш адрес в Москве</h5>
+                <div class="contact-card__contacts d-flex flex-column">
+                  <a class="contact-card__item item-with-icon" href="tel:#">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
+										c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
+										c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
+										l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
+										L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
+										C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
+										c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>8 (800)-123-45-67</span>
+                  </a>
+                  <a class="contact-card__item item-with-icon" href="mailto:#">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M801.861,187.424c17.59,0.139,34.667,6.627,47.568,19.529l99.849,99.81
+										c27.6,27.601,25.709,74.104-4.143,104.027c-29.925,29.925-76.502,31.704-104.026,4.18l-99.811-99.81
+										c-27.601-27.525-25.671-74.177,4.18-104.027C761.337,195.234,781.928,187.267,801.861,187.424L801.861,187.424z M637.348,319.301
+										l199.658,199.62L512.538,843.312L312.88,643.655L637.348,319.301z M261.056,681.459l210.6,210.601l-263.335,52.735L261.056,681.459z
+										" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>mrgroup-msk@support.ru</span>
+                  </a>
+                  <a class="contact-card__item item-with-icon">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
+										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
+										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
+										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>Москва, Варшавское шоссе, 24</span>
+                  </a>
+                </div>
+                <p class="contact-card__decription">Наша строительная компания в Москве предоставляет высококачественные услуги по строительству и ремонту, с учетом индивидуальных потребностей клиентов.</p>
+                <div class="contact-card__additional">
+                  <button class="btn btn--accent" type="submit">Смотреть на карте</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-bs-toggle="tab" data-bs-target="#tab-2" role="tab" aria-selected="false">
+              <div class="contacts__contact-card contact-card" data-animation="slide-up">
+                <h5 class="contact-card__title">Наш адрес в Санкт-Петербурге</h5>
+                <div class="contact-card__contacts d-flex flex-column">
+                  <a class="contact-card__item item-with-icon" href="tel:#">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
+										c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
+										c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
+										l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
+										L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
+										C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
+										c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>8 (800)-555-77-77</span>
+                  </a>
+                  <a class="contact-card__item item-with-icon" href="mailto:#">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M801.861,187.424c17.59,0.139,34.667,6.627,47.568,19.529l99.849,99.81
+										c27.6,27.601,25.709,74.104-4.143,104.027c-29.925,29.925-76.502,31.704-104.026,4.18l-99.811-99.81
+										c-27.601-27.525-25.671-74.177,4.18-104.027C761.337,195.234,781.928,187.267,801.861,187.424L801.861,187.424z M637.348,319.301
+										l199.658,199.62L512.538,843.312L312.88,643.655L637.348,319.301z M261.056,681.459l210.6,210.601l-263.335,52.735L261.056,681.459z
+										" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>mrgroup-ptb@support.ru</span>
+                  </a>
+                  <a class="contact-card__item item-with-icon">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
+										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
+										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
+										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>Санкт-Петербург, Садовая улица, 31</span>
+                  </a>
+                </div>
+                <p class="contact-card__decription">В Петербурге наша компания специализируется на создании современных и функциональных пространств, отвечающих самым высоким стандартам качества.</p>
+                <div class="contact-card__additional">
+                  <button class="btn btn--accent" type="submit">Смотреть на карте</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-bs-toggle="tab" data-bs-target="#tab-3" role="tab" aria-selected="false">
+              <div class="contacts__contact-card contact-card" data-animation="slide-down">
+                <h5 class="contact-card__title">Наш адрес в Волгограде</h5>
+                <div class="contact-card__contacts d-flex flex-column">
+                  <a class="contact-card__item item-with-icon" href="tel:#">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M384.375,238.33c12.362-0.729,23.536,6.66,32.007,19.775l82.031,155.566
+										c8.637,18.434,3.729,38.172-9.155,51.343l-37.573,37.573c-2.319,3.178-3.845,6.757-3.882,10.693
+										c14.409,55.775,58.117,107.223,96.681,142.603c38.562,35.38,80.009,83.281,133.812,94.629c6.65,1.855,14.797,2.52,19.556-1.903
+										l43.652-44.458c15.068-11.421,36.866-16.956,52.954-7.617h0.732l148.021,87.378c21.728,13.619,23.979,39.944,8.423,55.957
+										L849.683,941.016c-15.056,15.44-35.058,20.631-54.491,20.654c-85.948-2.575-167.158-44.759-233.862-88.11
+										C451.84,793.907,351.407,695.114,288.355,575.757c-24.182-50.05-52.589-113.91-49.878-169.774
+										c0.242-21.016,5.928-41.605,20.728-55.151l101.953-101.953C369.1,242.121,376.957,238.768,384.375,238.33z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>8 (800)-777-88-69</span>
+                  </a>
+                  <a class="contact-card__item item-with-icon" href="mailto:#">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M801.861,187.424c17.59,0.139,34.667,6.627,47.568,19.529l99.849,99.81
+										c27.6,27.601,25.709,74.104-4.143,104.027c-29.925,29.925-76.502,31.704-104.026,4.18l-99.811-99.81
+										c-27.601-27.525-25.671-74.177,4.18-104.027C761.337,195.234,781.928,187.267,801.861,187.424L801.861,187.424z M637.348,319.301
+										l199.658,199.62L512.538,843.312L312.88,643.655L637.348,319.301z M261.056,681.459l210.6,210.601l-263.335,52.735L261.056,681.459z
+										" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>mrgroup-vlgk@support.ru</span>
+                  </a>
+                  <a class="contact-card__item item-with-icon">
+                    <i class="contacts__contacts-icon item-with-icon__icon">
+                      <svg version="1.1" width="30px" height="30px" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                        <path d="M600,0C268.629,0,0,268.629,0,600s268.629,600,600,600
+										s600-268.629,600-600S931.371,0,600,0z M600,203.247c165.185,0,299.121,133.937,299.121,299.121
+										c0,50.037-13.711,116.091-41.896,153.441L600,996.753L342.773,655.811c-31.029-41.123-41.895-98.199-41.895-153.441
+										C300.879,337.184,434.815,203.247,600,203.247z M600,376.538c-69.503,0-125.83,56.327-125.83,125.83s56.327,125.83,125.83,125.83
+										s125.83-56.327,125.83-125.83S669.503,376.538,600,376.538z" fill="currentColor" />
+                      </svg>
+                    </i>
+                    <span>Волгоград, улица Ткачёва, 16Б</span>
+                  </a>
+                </div>
+                <p class="contact-card__decription">В Волгограде мы занимаемся строительством надежных и эстетичных зданий, подходящих для жизни и работы в динамично развивающемся городе.</p>
+                <div class="contact-card__additional">
+                  <button class="btn btn--accent" type="submit">Смотреть на карте</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__panes tab-content mt-3" data-animation="slide-up">
+            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+              <div class="contacts__map">
+                <div style="position:relative;overflow:hidden;">
+                  <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                  <a href="https://yandex.ru/maps/213/moscow/house/varshavskoye_shosse_24a/Z04YcAViS0IGQFtvfXp5dHRrbQ==/?indoorLevel=1&amp;ll=37.622603%2C55.686355&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Варшавское шоссе, 24</a>
+                  <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&amp;ll=37.622603%2C55.686355&amp;mode=whatshere&amp;whatshere%5Bpoint%5D=37.622271%2C55.685889&amp;whatshere%5Bzoom%5D=17&amp;z=17" width="560" height="400" style="position:relative;"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+              <div class="contacts__map">
+                <div style="position:relative;overflow:hidden;">
+                  <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+                  <a href="https://yandex.ru/maps/2/saint-petersburg/house/sadovaya_ulitsa_31/Z0kYdQViSEIDQFtjfXVzeXRlYg==/?ll=30.322215%2C59.928947&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=18.71" style="color:#eee;font-size:12px;position:absolute;top:14px;">Садовая улица, 31</a>
+                  <iframe src="https://yandex.ru/map-widget/v1/?ll=30.322215%2C59.928947&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMDA4NzI1MzAzEkrQoNC-0YHRgdC40Y8sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQodCw0LTQvtCy0LDRjyDRg9C70LjRhtCwLCAzMSIKDdGT8kEVKLdvQg%2C%2C&amp;z=18.71" width="560" height="400" style="position:relative;"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+              <div class="contacts__map">
+                <div style="position:relative;overflow:hidden;">
+                  <a href="https://yandex.ru/maps/38/volgograd/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Волгоград</a>
+                  <a href="https://yandex.ru/maps/38/volgograd/house/ulitsa_tkachyova_16b/YE0YcwZnTEQDQFpifXtzc3lmbQ==/?ll=44.517253%2C48.722982&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=16.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ткачёва, 16Б — Яндекс Карты</a>
+                  <iframe src="https://yandex.ru/map-widget/v1/?ll=44.517253%2C48.722982&amp;mode=whatshere&amp;whatshere%5Bpoint%5D=44.517317%2C48.722520&amp;whatshere%5Bzoom%5D=17&amp;z=16.84" width="560" height="400" style="position:relative;"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="request pt-5" id="request">
+        <div class="container">
+          <h2 class="request__title section-title" data-animation="scale-up">Оставить заявку</h2>
+          <div class="request__section-plate section-plate">
+            <form class="request__form callback-form" action="/" method="post" id="requestForm" data-animation="slide-left">
+              <div class="row">
+                <div class="col-md-6 order-md-2">
+                  <div class="px-2 px-sm-5 py-sm-4 py-md-0 px-md-3 ps-lg-4 ps-xxl-5">
+                    <div class="mb-3 callback-form__element">
+                      <label class="form-label" for="requestName">Ваше имя</label>
+                      <input class="form-control" id="requestName" type="text" name="name">
+                      <span class="form-checker">Заполните поле корректно</span>
+                    </div>
+                    <div class="mb-3 callback-form__element">
+                      <label class="form-label" for="requestEmail">Ваша электронная почта</label>
+                      <input class="form-control" id="requestEmail" type="email" name="email">
+                      <span class="form-checker">Заполните поле корректно</span>
+                      <p class="form-text" id="emailHelp">Мы никому не предоставляем ваши данные.</p>
+                    </div>
+                    <div class="mb-3 callback-form__element">
+                      <label class="form-label" for="requestMessage">Сообщение</label>
+                      <textarea class="form-control" id="requestMessage" placeholder="Дополнительная информация" name="message" style="height: 100px"></textarea>
+                    </div>
+                    <div class="mb-3 callback-form__element form-check">
+                      <input class="form-check-input" id="requestCheck" type="checkbox" name="check">
+                      <label class="form-check-label" for="requestCheck">Я согласен с политикой обработки <a href="#" class="text-muted"> "Персональных данных" </a>
+                      </label>
+                    </div>
+                    <button class="btn btn--accent" type="submit" name="button">Отправить</button>
+                  </div>
+                </div>
+                <div class="col-md-6 d-none d-sm-block order-md-1">
+                  <div class="request__image-wrap px-sm-5 pb-sm-4 p-md-0">
+                    <div class="request__image" data-animation="slide-left">
+                      <img src="img/content/request.jpg" alt="Форма обратной связи">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="modal fade" id="callback" tabindex="-1" aria-labelledby="callback" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header  px-sm-5 py-sm-4">
+              <h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-5 py-5 pt-3">
+              <form class="callback-form" action="/" method="post" id="callbackForm">
+                <div class="mb-3 callback-form__element">
+                  <label class="form-label" for="callbackName">Ваше имя</label>
+                  <input class="form-control" id="callbackName" type="text" name="name">
+                  <span class="form-checker">Заполните поле корректно</span>
+                </div>
+                <div class="mb-3 callback-form__element">
+                  <label class="form-label" for="callbackEmail">Ваша электронная почта</label>
+                  <input class="form-control" id="callbackEmail" type="email" name="email">
+                  <span class="form-checker">Заполните поле корректно</span>
+                  <p class="form-text">Мы никому не предоставляем ваши данные.</p>
+                </div>
+                <div class="mb-3 callback-form__element">
+                  <label class="form-label" for="callbackMessage">Сообщение</label>
+                  <textarea class="form-control" id="callbackMessage" placeholder="Дополнительная информация" name="message" style="height: 100px"></textarea>
+                </div>
+                <div class="mb-3 callback-form__element form-check">
+                  <input class="form-check-input" id="callbackCheck" type="checkbox" name="check">
+                  <label class="form-check-label" for="callbackCheck">Я согласен с политикой обработки <a href="#" class="text-muted"> "Персональных данных" </a>
+                  </label>
+                </div>
+                <button class="btn btn--accent" type="submit" name="button">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body px-5 py-5 pt-3">
-        <form class="callback-form" action="/" method="post" id="callbackForm">
-          <div class="mb-3 callback-form__element">
-            <label class="form-label" for="callbackName">Ваше имя</label>
-            <input class="form-control" id="callbackName" type="text" name="name"><span class="form-checker">Заполните поле корректно</span>
+      <footer class="footer mt-5 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center col-sm-3 text-sm-start col-md-4 col-lg-6 col-xxl-8">
+              <a class="footer__logo navbar-brand m-0" href="#" title="Логотип компании" data-animation="slide-right">
+                <svg viewBox="0 0 110 24" width="114" height="28" fill="#000">
+                  <path d="M40.1 23.9L35 14.8H31.8C33.7 14.6 35.3 13.9 36.6 12.8C38.3 11.4 39.2 9.6 39.2 7.5C39.2 5.4 38.3 3.6 36.6 2.2C34.9 0.7 32.7 0 30.2 0H19L12.4 17.2L5.6 0H0V23.9H1.4V2.6L9.8 23.9H11.4L19.4 2.7V23.9H24.6V14.9H29.3L34.3 23.9H40.1ZM24.6 13.7V1.2H28.5C31.3 1.2 33.2 3.7 33.2 7.5C33.2 11.3 31.3 13.8 28.5 13.8H24.6V13.7Z" fill="currentColor" />
+                  <path d="M69.5 18L67 13.4H65.4C66.3 13.3 67.1 12.9 67.8 12.4C68.7 11.7 69.1 10.8 69.1 9.7C69.1 8.6 68.7 7.8 67.8 7.1C66.9 6.4 65.9 6 64.6 6H59.2V18H61.8V13.5H64.2L66.7 18H69.5ZM61.8 12.9V6.6H63.7C65.1 6.6 66 7.8 66 9.7C66 11.6 65.1 12.8 63.7 12.8H61.8V12.9Z" fill="currentColor" />
+                  <path d="M77.3 18C75.5 18 74 17.4 72.8 16.3C71.6 15.1 71 13.7 71 12C71 10.3 71.6 8.8 72.8 7.7C74 6.5 75.5 6 77.3 6C79.1 6 80.6 6.6 81.8 7.7C83 8.9 83.6 10.3 83.6 12C83.6 13.7 83 15.2 81.8 16.3C80.6 17.5 79.1 18 77.3 18ZM77.3 17.6C78.4 17.6 79.2 17.1 79.9 16.1C80.6 15.1 80.9 13.7 80.9 12C80.9 10.3 80.6 9 79.9 7.9C79.3 6.9 78.4 6.4 77.3 6.4C76.2 6.4 75.4 6.9 74.7 7.9C74.1 8.9 73.7 10.3 73.7 12C73.7 13.7 74 15 74.7 16.1C75.3 17.1 76.2 17.6 77.3 17.6Z" fill="currentColor" />
+                  <path d="M94.8 6C94.8 6 94.8 14.3 94.8 15.8C94.2 16.7 93.2 17.2 91.9 17.2C89.7 17.2 88.3 15.8 88.3 13.4V6H85.7V13.1C85.7 14.5 86.2 15.7 87.2 16.6C88.2 17.5 89.5 17.9 91.1 17.9C92.6 17.9 93.7 17.5 94.6 16.7C94.8 16.5 95 16.3 95.1 16.1L97 18H97.4V6H94.8Z" fill="currentColor" />
+                  <path d="M105.4 6C106.7 6 107.7 6.4 108.6 7.1C109.5 7.8 109.9 8.7 109.9 9.7C109.9 10.8 109.5 11.6 108.6 12.4C107.7 13.1 106.7 13.5 105.4 13.5H102.6V18H100V6H105.4ZM104.6 12.9C106 12.9 106.9 11.7 106.9 9.8C106.9 7.9 106 6.7 104.6 6.7H102.7V12.9H104.6Z" fill="currentColor" />
+                  <path d="M54 12.8999C54 12.8999 54 14.5999 54 15.8999C53.7 16.9999 52.7 17.6999 51.3 17.6999C50.1 17.6999 49.3 17.1999 48.6 16.1999C47.9 15.1999 47.6 13.8999 47.6 12.1999C47.6 8.5999 49.3 6.4999 52.1 6.4999C53.1 6.4999 53.9 6.6999 54.5 7.1999C55.2 7.6999 55.5 8.2999 55.5 9.0999H56C56 8.1999 55.5 7.2999 54.7 6.6999C53.9 6.0999 52.8 5.8999 51.5 5.8999C49.6 5.8999 48.1 6.4999 46.8 7.5999C45.6 8.7999 45 10.2999 45 11.9999C45 13.6999 45.6 15.1999 46.8 16.3999C48 17.5999 49.6 18.0999 51.3 18.0999C52.9 18.0999 54.2 17.5999 54.8 16.6999L56.2 17.9999H56.6V12.8999H54Z" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+            <div class="col-12 col-sm-9 col-md-8 col-lg-6 col-xxl-4">
+              <nav class="footer__nav text-center" data-animation="slide-left">
+                <ul class="list-style-none my-4 m-sm-0 d-sm-flex flex-sm-wrap justify-content-sm-end justify-content-md-between">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#request">
+                      <span>Оставить заявку</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                      <span>О компании</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacts">
+                      <span>Контакты</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 mt-sm-3 col-sm-6">
+              <ul class="footer__social nav d-flex justify-content-center justify-content-sm-start" data-animation="slide-down">
+                <li class="footer__social-item">
+                  <a href="#">
+                    <img src="img/icons/instagram.svg" alt="instagram">
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+                <li class="footer__social-item ms-3">
+                  <a href="#">
+                    <img src="img/icons/vk.svg" alt="vk">
+                    <span class="visually-hidden">Vkontakte</span>
+                  </a>
+                </li>
+                <li class="footer__social-item ms-3">
+                  <a href="#">
+                    <img src="img/icons/telegram.svg" alt="telegram">
+                    <span class="visually-hidden">Telegram</span>
+                  </a>
+                </li>
+                <li class="footer__social-item ms-3">
+                  <a href="#">
+                    <img src="img/icons/whatsapp.svg" alt="whatsapp">
+                    <span class="visually-hidden">Whatsapp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 text-center mt-3 col-sm-6">
+              <div class="flex-column d-sm-flex justify-content-center h-100" data-animation="slide-down">
+                <span class="text-muted me-sm-0 ms-sm-auto">© 2023, MR Group</span>
+              </div>
+            </div>
           </div>
-          <div class="mb-3 callback-form__element">
-            <label class="form-label" for="callbackEmail">Ваша электронная почта</label>
-            <input class="form-control" id="callbackEmail" type="email" name="email"><span class="form-checker">Заполните поле корректно</span>
-            <p class="form-text">Мы никому не предоставляем ваши данные.</p>
-          </div>
-          <div class="mb-3 callback-form__element">
-            <label class="form-label" for="callbackMessage">Сообщение</label>
-            <textarea class="form-control" id="callbackMessage" placeholder="Дополнительная информация" name="message" style="height: 100px"></textarea>
-          </div>
-          <div class="mb-3 callback-form__element form-check">
-            <input class="form-check-input" id="callbackCheck" type="checkbox" name="check">
-            <label class="form-check-label" for="callbackCheck">Я согласен с политикой обработки <a href="#" class="text-muted"> "Персональных данных" </a></label>
-          </div>
-          <button class="btn btn--accent" type="submit" name="button">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="footer mt-5 py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-center col-sm-3 text-sm-start col-md-4 col-lg-6 col-xxl-8">
-				<a class="footer__logo navbar-brand m-0" href="#" title="Логотип компании" data-animation="slide-right">
-					<svg viewBox="0 0 110 24" width="114" height="28" fill="#000" >
-						<path d="M40.1 23.9L35 14.8H31.8C33.7 14.6 35.3 13.9 36.6 12.8C38.3 11.4 39.2 9.6 39.2 7.5C39.2 5.4 38.3 3.6 36.6 2.2C34.9 0.7 32.7 0 30.2 0H19L12.4 17.2L5.6 0H0V23.9H1.4V2.6L9.8 23.9H11.4L19.4 2.7V23.9H24.6V14.9H29.3L34.3 23.9H40.1ZM24.6 13.7V1.2H28.5C31.3 1.2 33.2 3.7 33.2 7.5C33.2 11.3 31.3 13.8 28.5 13.8H24.6V13.7Z" fill="currentColor"/>
-						<path d="M69.5 18L67 13.4H65.4C66.3 13.3 67.1 12.9 67.8 12.4C68.7 11.7 69.1 10.8 69.1 9.7C69.1 8.6 68.7 7.8 67.8 7.1C66.9 6.4 65.9 6 64.6 6H59.2V18H61.8V13.5H64.2L66.7 18H69.5ZM61.8 12.9V6.6H63.7C65.1 6.6 66 7.8 66 9.7C66 11.6 65.1 12.8 63.7 12.8H61.8V12.9Z" fill="currentColor"/>
-						<path d="M77.3 18C75.5 18 74 17.4 72.8 16.3C71.6 15.1 71 13.7 71 12C71 10.3 71.6 8.8 72.8 7.7C74 6.5 75.5 6 77.3 6C79.1 6 80.6 6.6 81.8 7.7C83 8.9 83.6 10.3 83.6 12C83.6 13.7 83 15.2 81.8 16.3C80.6 17.5 79.1 18 77.3 18ZM77.3 17.6C78.4 17.6 79.2 17.1 79.9 16.1C80.6 15.1 80.9 13.7 80.9 12C80.9 10.3 80.6 9 79.9 7.9C79.3 6.9 78.4 6.4 77.3 6.4C76.2 6.4 75.4 6.9 74.7 7.9C74.1 8.9 73.7 10.3 73.7 12C73.7 13.7 74 15 74.7 16.1C75.3 17.1 76.2 17.6 77.3 17.6Z" fill="currentColor"/>
-						<path d="M94.8 6C94.8 6 94.8 14.3 94.8 15.8C94.2 16.7 93.2 17.2 91.9 17.2C89.7 17.2 88.3 15.8 88.3 13.4V6H85.7V13.1C85.7 14.5 86.2 15.7 87.2 16.6C88.2 17.5 89.5 17.9 91.1 17.9C92.6 17.9 93.7 17.5 94.6 16.7C94.8 16.5 95 16.3 95.1 16.1L97 18H97.4V6H94.8Z" fill="currentColor"/>
-						<path d="M105.4 6C106.7 6 107.7 6.4 108.6 7.1C109.5 7.8 109.9 8.7 109.9 9.7C109.9 10.8 109.5 11.6 108.6 12.4C107.7 13.1 106.7 13.5 105.4 13.5H102.6V18H100V6H105.4ZM104.6 12.9C106 12.9 106.9 11.7 106.9 9.8C106.9 7.9 106 6.7 104.6 6.7H102.7V12.9H104.6Z" fill="currentColor"/>
-						<path d="M54 12.8999C54 12.8999 54 14.5999 54 15.8999C53.7 16.9999 52.7 17.6999 51.3 17.6999C50.1 17.6999 49.3 17.1999 48.6 16.1999C47.9 15.1999 47.6 13.8999 47.6 12.1999C47.6 8.5999 49.3 6.4999 52.1 6.4999C53.1 6.4999 53.9 6.6999 54.5 7.1999C55.2 7.6999 55.5 8.2999 55.5 9.0999H56C56 8.1999 55.5 7.2999 54.7 6.6999C53.9 6.0999 52.8 5.8999 51.5 5.8999C49.6 5.8999 48.1 6.4999 46.8 7.5999C45.6 8.7999 45 10.2999 45 11.9999C45 13.6999 45.6 15.1999 46.8 16.3999C48 17.5999 49.6 18.0999 51.3 18.0999C52.9 18.0999 54.2 17.5999 54.8 16.6999L56.2 17.9999H56.6V12.8999H54Z" fill="currentColor"/>
-					</svg>
-				</a>
-			</div>
-			<div class="col-12 col-sm-9 col-md-8 col-lg-6 col-xxl-4">
-				<nav class="footer__nav text-center" data-animation="slide-left">
-					<ul class="list-style-none my-4 m-sm-0 d-sm-flex flex-sm-wrap justify-content-sm-end justify-content-md-between">
-						<li class="nav-item"><a class="nav-link" href="#request"><span>Оставить заявку</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="#about"><span>О компании</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="#contacts"><span>Контакты</span></a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="col-12 mt-sm-3 col-sm-6">
-				<ul class="footer__social nav d-flex justify-content-center justify-content-sm-start" data-animation="slide-down">
-					<li class="footer__social-item"><a href="#"><img src="img/icons/instagram.svg" alt="instagram"><span class="visually-hidden">Instagram</span></a></li>
-					<li class="footer__social-item ms-3"><a href="#"><img src="img/icons/vk.svg" alt="vk"><span class="visually-hidden">Vkontakte</span></a></li>
-					<li class="footer__social-item ms-3"><a href="#"><img src="img/icons/telegram.svg" alt="telegram"><span class="visually-hidden">Telegram</span></a></li>
-					<li class="footer__social-item ms-3"><a href="#"><img src="img/icons/whatsapp.svg" alt="whatsapp"><span class="visually-hidden">Whatsapp</span></a></li>
-				</ul>
-			</div>
-			<div class="col-12 text-center mt-3 col-sm-6">
-				<div class="flex-column d-sm-flex justify-content-center h-100" data-animation="slide-down"><span class="text-muted me-sm-0 ms-sm-auto">© 2023, MR Group</span></div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-</main>
-
-<script src="js/app.js"></script>
-
-</body>
+        </div>
+      </footer>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
 </html>
